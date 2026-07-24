@@ -1,8 +1,28 @@
 aid: castelion
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/castelion.png
 name: Castelion
-description: Castelion is a company surfaced as a portfolio company of a16z, general-catalyst, lightspeed-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Castelion is a vertically integrated defense technology company that designs,
+  tests, and manufactures next-generation military systems, with a focus on
+  affordable, mass-producible hypersonic strike weapons such as its Blackbeard
+  system, built rapidly and at scale to deter future conflict. Founded by former
+  SpaceX and defense-industry engineers, it operates manufacturing and test
+  facilities in Torrance, CA; Rio Rancho, NM; Midland, TX; and Allen, TX.
+  Castelion is privately held and backed by Andreessen Horowitz (a16z), General
+  Catalyst, and Lightspeed Venture Partners. It publishes no public API,
+  developer portal, or technical documentation; this API Evangelist profile
+  tracks it as a company in the network.
 url: https://raw.githubusercontent.com/api-evangelist/castelion/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,12 +34,34 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Defense
+- Aerospace
+- Hypersonics
+- Manufacturing
+- Weapons Systems
+- National Security
 apis: []
+common:
+- type: DomainSecurity
+  url: security/castelion-domain-security.yml
+- type: Website
+  url: https://www.castelion.com/
+- type: TermsOfService
+  url: https://www.castelion.com/terms-conditions/
+- type: PrivacyPolicy
+  url: https://www.castelion.com/privacy-policy/
+- type: Blog
+  url: https://www.castelion.com/news/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
